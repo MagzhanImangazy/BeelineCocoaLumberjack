@@ -46,7 +46,8 @@ let package = Package(
             exclude: ["Supporting Files"],
             resources: [
                 .process("PrivacyInfo.xcprivacy"),
-            ]),
+            ],
+            publicHeadersPath: "include"),
         .target(
             name: "CocoaLumberjackSwiftSupport",
             dependencies: ["CocoaLumberjack"]),
